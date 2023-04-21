@@ -1,7 +1,7 @@
 # Frontend Mentor - Rock, Paper, Scissors
 
-![Review](/)
-![Screenshot](/)
+![Review](/ss/desktop.png)
+![Screenshot](/ss/mobile.png)
 
 This is a solution to the [Multi-step form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/multistep-form-YVAnSdqQBJ). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
