@@ -1,31 +1,39 @@
-# Frontend Mentor - Multi-step form solution
+# Frontend Mentor - Rock, Paper, Scissors
 
-![Review](/review/review%20mobile.gif)
-![Screenshot](/review/review%20desktop.gif)
+![Review](/)
+![Screenshot](/)
 
 This is a solution to the [Multi-step form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/multistep-form-YVAnSdqQBJ). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-### Links
+## The challenge
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Github Page](https://zulfikarm321.github.io/Rest-countries-API-Frontend-Mentor/)
+Your challenge is to build out this Rock, Paper, Scissors game and get it looking as close to the design as possible.
 
-### The challenge
+You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
-Users should be able to:
+Your users should be able to:
 
-- See all countries from the API on the homepage
-- Search for a country using an `input` field
-- Filter countries by region
-- Click on a country to see more detailed information on a separate page
-- Click through to the border countries on the detail page
-- Toggle the color scheme between light and dark mode _(optional)_
+- View the optimal layout for the game depending on their device's screen size
+- Play Rock, Paper, Scissors against the computer
+- Maintain the state of the score after refreshing the browser _(optional)_
+- **Bonus**: Play Rock, Paper, Scissors, Lizard, Spock against the computer _(optional)_
+
+### Rules
+
+If the player wins, they gain 1 point. If the computer wins, the player loses one point.
+
+#### Original
+
+- Paper beats Rock
+- Rock beats Scissors
+- Scissors beats Paper
 
 ### Built with
 
 - HTML
 - CSS
 - VANILLA JAVASCRIPT
+- little bit Jquery (for effect fade element)
 
 ### Useful resources
 
@@ -35,3 +43,5 @@ Users should be able to:
 
 - Frontend Mentor - [@zulfikarm321](https://www.frontendmentor.io/profile/yourusername)
 - Instagram - [@zulfikar*muhamad*](https://www.instagram.com/zulfikar_muhamad_/)
+
+**Have fun building!** 🚀

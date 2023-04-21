@@ -1,0 +1,369 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+::root {
+  /* ### Primary */
+  -scissorsgradient: hsl(39, 89%, 49%) to hsl(40, 84%, 53%);
+  -papergradient: hsl(230, 89%, 62%) to hsl(230, 89%, 65%);
+  -rockgradient: hsl(349, 71%, 52%) to hsl(349, 70%, 56%);
+  -lizardgradient: hsl(261, 73%, 60%) to hsl(261, 72%, 63%);
+  -cyan: hsl(189, 59%, 53%) to hsl(189, 58%, 57%);
+
+  /* ### Neutral */
+  -dark9text: hsl(229, 25%, 31%);
+  --scoretext: hsl(229, 64%, 46%);
+  -headeroutline: hsl(217, 16%, 45%);
+
+  /* BG */
+  -radialgradient: hsl(214, 47%, 23%) to hsl(237, 49%, 15%);
+}
+
+body {
+  height: 100vh;
+  background-size: cover;
+  background: radial-gradient(
+    circle,
+    rgba(31, 55, 86, 1) 0%,
+    rgba(20, 21, 57, 1) 100%
+  );
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+/* HEADER START*/
+header {
+  border: 1px solid white;
+  width: 500px;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+.title_text {
+  line-height: 20px;
+  color: white;
+}
+
+.score_board {
+  background-color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+
+.score_board_text {
+  color: hsl(229, 64%, 46%);
+  font-size: 14px;
+}
+
+#score_board_number {
+  line-height: 40px;
+  font-size: 50px;
+  color: hsl(229, 25%, 31%);
+}
+/* HEADER END*/
+
+/* MAIN START */
+
+/* SECTION PICK START*/
+main {
+  margin-top: 50px;
+}
+
+.section_pick {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 50px;
+  background: url(images/bg-triangle.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.pick_option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(177, 144, 100);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.pick_option_shadow {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.349);
+}
+
+.gradient {
+  box-shadow: 0px 0px 0px 35px rgba(255, 255, 255, 0.055),
+    0px 0px 0px 70px rgba(255, 255, 255, 0.096),
+    0px 0px 0px 120px rgba(255, 255, 255, 0.041) !important;
+}
+
+.pick_option:hover {
+  transform: scale(1.1);
+}
+
+.pick_option_inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  box-shadow: 0 5px 1px hsl(0, 0%, 76%) inset;
+}
+
+#paper {
+  grid-area: 1 / 1 / 2 / 2;
+  background-color: hsl(230, 89%, 65%);
+  box-shadow: 3px 8px 1px hsl(230, 89%, 62%);
+}
+#scissors {
+  grid-area: 1 / 2 / 2 / 3;
+  background-color: hsl(40, 84%, 53%);
+  box-shadow: 3px 8px 1px hsl(39, 89%, 49%);
+}
+#rock {
+  grid-area: 2 / 1 / 3 / 3;
+  background-color: hsl(349, 70%, 56%);
+  box-shadow: 3px 8px 1px hsl(349, 71%, 52%);
+  justify-self: center;
+}
+/* SECTION PICK END*/
+
+/* SECTION PLAY START */
+.section_play {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  grid-column-gap: 50px;
+  display: grid;
+  grid-template-areas:
+    'topleft topcenter topright'
+    'bottom bottom bottom';
+  color: white;
+}
+
+.play_pick_user {
+  grid-area: topleft;
+}
+
+.play_result {
+  grid-area: topcenter;
+  padding-top: 5vh;
+}
+
+.play_pick_com {
+  grid-area: topright;
+}
+
+.play_pick {
+  display: grid;
+  grid-template-areas:
+    'top'
+    'bot';
+  gap: 5vh;
+}
+
+.play_pick_head p {
+  font-size: 15px;
+}
+
+.play_result_text {
+  font-size: 30px;
+}
+
+.btn_play {
+  margin-top: 20px;
+  padding: 10px 40px;
+  border-radius: 10px;
+}
+
+.btn_play:hover {
+  color: red;
+  cursor: pointer;
+}
+
+/* SECTION PLAY END */
+
+/* MAIB END */
+
+footer {
+  margin-top: 200px;
+  width: 500px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn_rules {
+  background-color: transparent;
+  padding: 10px 30px;
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal_rules {
+  background-color: rgba(0, 0, 0, 0.596);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+}
+
+.modal_rules_inner {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+  border-radius: 10px;
+  color: var(--scoretext);
+  background-color: white;
+}
+
+.modal_rules_head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn_close {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.modal_open {
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  header {
+    width: 100%;
+  }
+
+  footer {
+    margin-top: 10vh;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .section_play {
+    display: grid;
+    grid-column-gap: 30px;
+    grid-template-areas:
+      'topleft topright'
+      'bottom bottom';
+  }
+
+  .play_pick_user {
+    grid-area: topleft;
+  }
+  .play_result {
+    grid-area: bottom;
+  }
+  .play_pick_com {
+    grid-area: topright;
+  }
+
+  .play_pick_head {
+    grid-area: bot;
+  }
+}
+
+@media (max-width: 370px) {
+  header {
+    border: 1px solid white;
+    width: 100%;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+  }
+
+  .section_pick {
+    background-size: 200px;
+  }
+
+  .title_text {
+    font-size: 20px;
+  }
+
+  .score_board {
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 20px;
+    border-radius: 5px;
+  }
+
+  .score_board_text {
+    color: hsl(229, 64%, 46%);
+    font-size: 14px;
+  }
+
+  #score_board_number {
+    line-height: 40px;
+    font-size: 30px;
+    color: hsl(229, 25%, 31%);
+  }
+
+  .pick_option {
+    width: 100px;
+    height: 100px;
+  }
+
+  .pick_option_inner {
+    width: 80px;
+    height: 80px;
+  }
+
+  .pick_option_shadow {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.349);
+  }
+
+  .modal_rules_inner {
+    margin: 0 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--scoretext);
+    background-color: white;
+  }
+}

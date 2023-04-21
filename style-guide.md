@@ -5,37 +5,29 @@
 The designs were created to the following widths:
 
 - Mobile: 375px
-- Desktop: 1440px
+- Desktop: 1366px
 
 ## Colors
 
+### Primary
+
+- Scissors Gradient: hsl(39, 89%, 49%) to hsl(40, 84%, 53%)
+- Paper Gradient: hsl(230, 89%, 62%) to hsl(230, 89%, 65%)
+- Rock Gradient: hsl(349, 71%, 52%) to hsl(349, 70%, 56%)
+- Lizard Gradient: hsl(261, 73%, 60%) to hsl(261, 72%, 63%)
+- Cyan: hsl(189, 59%, 53%) to hsl(189, 58%, 57%)
+
 ### Neutral
 
-- Very Dark Blue (Light Mode Text): hsl(200, 15%, 8%)
-- Dark Gray (Light Mode Input): hsl(0, 0%, 52%)
-- - Very Light Gray (Light Mode Background): hsl(0, 0%, 98%)
-- Dark Blue (Dark Mode Elements): hsl(209, 23%, 22%)
-- Very Dark Blue (Dark Mode Background): hsl(207, 26%, 17%)
-- White (Dark Mode Text & Light Mode Elements): hsl(0, 0%, 100%)
+- Dark Text: hsl(229, 25%, 31%)
+- Score Text: hsl(229, 64%, 46%)
+- Header Outline: hsl(217, 16%, 45%)
 
-## Typography
+### Background
 
-### Body Copy
+- Radial Gradient: hsl(214, 47%, 23%) to hsl(237, 49%, 15%)
 
-- Homepage Items: 14px
-- Detail Page: 16px
+## Fonts
 
-### Fonts
-
-- Family: [Nunito Sans](https://fonts.google.com/specimen/Nunito+Sans)
-- Weights: 300, 600, 800
-
-## Icons
-
-For the icons, you can use a font icon library. Don't worry if the icons that you choose don't look exactly like they do on the design.
-
-Some suggestions can be found below:
-
-- [Font Awesome](https://fontawesome.com)
-- [IcoMoon](https://icomoon.io)
-- [Ionicons](https://ionicons.com)
+- Family: [Barlow Semi Condensed](https://fonts.google.com/specimen/Barlow+Semi+Condensed)
+- Weights: 600, 700
